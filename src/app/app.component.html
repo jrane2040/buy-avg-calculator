@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="text-container">
+    <h1>{{ currentInvestedValue ? 'Invested Value: ' + (currentInvestedValue | number:'1.0-2') : ''  }}</h1>
+  </div>
+  <div class="text-container">
+    <h1>{{ investingValue ? 'Investing Value: ' + (investingValue | number:'1.0-2') : ''  }}</h1>
+  </div>
+  <div class="text-container">
+    <h1>{{ result ? 'Average Price: ' + (result | number:'1.0-2') : ''  }}</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="inline-container">
+    <input class="input-style" type="text" name="currentPrice" placeholder="Current Price" [(ngModel)]="currentPrice" (ngModelChange)="calculate()">
+  </div>
+  <div class="inline-container">
+    <input class="input-style" type="text" name="currentUnits" placeholder="Current Units" [(ngModel)]="currentUnits" (ngModelChange)="calculate()">
+  </div>
+  <div class="inline-container">
+    <input class="input-style" type="text" name="buyPrice" placeholder="Buy Price" [(ngModel)]="buyPrice" (ngModelChange)="calculate()">
+  </div>
+  <div class="inline-container">
+    <input class="input-style" type="text" name="buyUnits" placeholder="Buy Units" [(ngModel)]="buyUnits" (ngModelChange)="calculate()">
+  </div>
+</div>

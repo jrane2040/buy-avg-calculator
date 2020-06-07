@@ -1,0 +1,47 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inline-container {
+    align-self: center
+}
+
+.text-container {
+    flex: 0 1 100%;
+    text-align: center
+}
+
+h1 {
+    color: white;
+    width: 100%;
+}
+
+/* Input Design */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.input-style {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+.input-style:focus {
+    outline: none;
+}
